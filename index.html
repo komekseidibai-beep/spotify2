@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify.com</title>
+  </head>
+  <style>
+    
+    body {
+      background-color: black;
+      margin: 0;
+      padding: 0;
+    }
+    .block1 {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .left {
+      display: flex;
+      gap: 30px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+    .left img {
+      width: 45px;
+      height: 45px;
+    }
+    .tt1 {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .tt1 img {
+      width: 27px;
+      height: 27px;
+    }
+    .yt {
+      background-color: #1f1f1f;
+      width: 45px;
+      height: 45px;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .yt img {
+      margin-bottom: 3px;
+    }
+    .search {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 450px;
+      height: 45px;
+      flex-wrap: wrap;
+    }
+
+    .search input {
+      background-color: #1f1f1f;
+      color: white;
+      border: none;
+      height: 45px;
+      width: 100%;
+      max-width: 370px;
+      font-weight: 100;
+      font-size: 15px;
+    }
+    .img1 {
+      width: 47px;
+      height: 47px;
+      display: flex;
+      align-items: center;
+      background-color: #1f1f1f;
+      border-radius: 100px 0 0 100px;
+    }
+    .dd {
+      margin-left: 15px;
+    }
+    .img2 {
+      width: 47px;
+      height: 47px;
+      display: flex;
+      align-items: center;
+      background-color: #1f1f1f;
+      border-radius: 0 100px 100px 0;
+    }
+    .dd2 {
+      margin: 10px;
+      width: 45px;
+      height: 45px;
+    }
+    .right {
+      display: flex;
+      color: white;
+      gap: 10px;
+      width: 100%;
+      max-width: 900px;
+      margin-top: 15px;
+      flex-wrap: wrap;
+    }
+    .right img {
+      width: 30px;
+      height: 30px;
+    }
+    .p {
+      background-color: white;
+      color: black;
+      font-weight: 200;
+      height: 36px;
+      width: 100%;
+      max-width: 240px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100px;
+      margin-top: 0;
+      margin-left: 0;
+      font-weight: 300;
+    }
+    .dow {
+      background-color: #1f1f1f;
+      color: white;
+      height: 36px;
+      width: 100%;
+      max-width: 240px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100px;
+    }
+    .dow p {
+      width: 100%;
+      max-width: 170px;
+      opacity: 70%;
+    }
+    .dow img {
+      margin-right: 10px;
+      width: 25px;
+      height: 25px;
+    }
+    .block2 {
+      color: white;
+      width: 100%;
+      max-width: 370px;
+      background-color: #121212;
+      border-radius: 0 7px 7px 0;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+    .top1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 5px;
+    }
+    .rit {
+      display: flex;
+      align-items: center;
+    }
+    .rit img {
+      width: 15px;
+      height: 15px;
+    }
+    .gg {
+      display: flex;
+      align-items: center;
+      background-color: #1f1f1f;
+      width: 100px;
+      height: 36px;
+      border-radius: 100px;
+      gap: 10px;
+      padding-left: 10px;
+    }
+    .arr {
+      margin-left: 10px;
+      width: 40px;
+      height: 40px;
+    }
+    .pl {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #1f1f1f;
+      width: 100px;
+      height: 36px;
+      border-radius: 100px;
+    }
+    .center {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 5px;
+      flex-wrap: wrap;
+    }
+    .center img{
+        opacity: 70%;
+    }
+    .kk {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .kk p{
+        opacity: 70%;
+    }
+    .kk img {
+      width: 30px;
+      height: 30px;
+    }
+    .jox{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .img4{
+       width: 55px;
+       height: 55px;
+       border-radius: 5px;
+    }
+    .mm2{
+        opacity: 70%;
+        margin: 3px 0 5px;
+    }
+    .vol{
+        width: 20px;
+        height: 20px;
+        margin-left: 0;
+    }
+    .block3{
+    background-color: #121212;
+    margin-left: 0;
+        width: 100%;
+        max-width: 900px;
+        color: white;
+        border-radius: 7px 7px 0 0;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+    .block3 img{
+     border-radius: 5px 0 0 0;
+      width: 50px;
+      height: 50px;
+    }
+    .klk{
+         display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+    }
+    .kj{
+       display: flex;
+       width: 100%;
+       flex-wrap: wrap;
+    }
+    .vv{
+        margin-left: 10px;
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    .mj{
+        display: flex;
+       align-items: center;
+      justify-content: center;   
+        background-color: #1f1f1f;
+        width: 50px;
+        height: 30px;
+        color: white;
+        border-radius: 100px; 
+        margin: 0;
+        margin-bottom: 10px;  
+    }
+    .mj2{
+        display: flex;
+       align-items: center;
+      justify-content: center;   
+        background-color: #ffffff;
+        width: 70px;
+        height: 30px;
+        color: rgb(0, 0, 0);
+        border-radius: 100px; 
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .redmy{
+        display: flex;
+        width: 100%;
+        max-width: 240px;
+        height: 50px;
+        background-color: #1f1f1f;
+        gap: 13px;
+        border-radius: 5px;
+    }
+   .block4 img{
+      width: 100%;
+      max-width: 150px;
+      height: auto;
+   }
+   .qwerty{
+    display: flex;
+    flex-direction: column;
+   }
+   .block4{
+    display: flex;
+    flex-direction: column;
+    background-color: #121212;
+    color: white;
+    width: 100%;
+        max-width: 900px;
+        border-radius: 0 0 7px 7px;
+        padding: 30px;
+        margin-left: 0;
+        margin-top: 0;
+        box-sizing: border-box;
+    }
+   
+   .mnb{
+    font-size: 15px;
+    opacity: 40%;
+   }
+   .pp{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   }
+   .tytr{
+    font-size: 25px;
+   }
+   .ytr{
+    opacity: 40%;
+   }
+   .boxs{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    gap: 10px;
+   }
+  
+  .name{
+    font-size: 20px;
+  }
+  .avtor{
+    font-size: 15px;
+    opacity: 70%;
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+    .boxs {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .klk {
+      grid-template-columns: 1fr 1fr;
+    }
+    .block3, .block4 {
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 900px) {
+    .boxs {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .klk {
+      grid-template-columns: 1fr 1fr;
+    }
+    .block2 {
+      max-width: 100%;
+    }
+    .right {
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 600px) {
+    .boxs {
+      grid-template-columns: 1fr;
+    }
+    .klk {
+      grid-template-columns: 1fr;
+    }
+    .block1, .kj, .vv, .pp {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .block2, .block3, .block4 {
+      padding: 10px;
+    }
+    .tytr {
+      font-size: 18px;
+    }
+    .name {
+      font-size: 16px;
+    }
+    .avtor {
+      font-size: 12px;
+    }
+    .mj, .mj2 {
+      width: 100%;
+      max-width: 100px;
+    }
+    .redmy {
+      max-width: 100%;
+    }
+    .block4 img {
+      max-width: 100px;
+    }
+  }
+  </style>
+  <body>
+    <div class="container">
+      <div class="block1">
+        <div class="left">
+          <img src="spotify.png" alt="" />
+          <div class="tt1">
+            <div class="yt">
+              <img src="home-activity.png" alt="" />
+            </div>
+            <div class="search">
+              <div class="img1">
+                <img class="dd" src="search-interface-symbol.png" alt="" />
+              </div>
+              <input type="text" placeholder="Что хочешь включить?" />
+              <div class="img2">
+                <img" class="dd2" src="shopping-bag (1).png" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <p class="p">Узнать больше Premium</p>
+          <div class="dow">
+            <img src="download-circular-button.png" alt="" />
+            <p>Установить приложение</p>
+          </div>
+          <img src="bell.png" alt="" />
+          <img src="friends.png" alt="" />
+          <img src="letter-k.png" alt="" />
+        </div>
+      </div>
+      <div class="kj">
+        
+      <div class="block2">
+        <div class="top1">
+          <p>Моя медиатека</p>
+          <div class="rit">
+            <div class="gg">
+              <img src="plus.png" alt="" />
+              <p>Создать</p>
+            </div>
+            <img class="arr" src="arrows.png" alt="" />
+          </div>
+        </div>
+        <p class="pl">Плейлисты</p>
+        <div class="center">
+          <img src="search-interface-symbol.png" alt="" />
+          <div class="kk">
+            <p>Недавние</p>
+            <img src="history.png" alt="" />
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="jox">
+            <img class="img4" src="asik2.jpg" alt="" />
+            <div class="ll">
+              <p class="mm">Любимые треки</p>
+              <p class="mm2">Плейлист - 25 Треков</p>
+            </div>
+          </div>
+          <div class="jox">
+            <img class="img4" src="asik.jpg" alt="" />
+            <div class="ll">
+              <p class="mm">Микс дня#2</p>
+              <p class="mm2">Плейлист - Spotify</p>
+            </div>
+            <img class="vol" src="volume (1).png" alt="" />
+          </div>
+          <div class="jox">
+            <img class="img4" src="asik3.jpg" alt="" />
+            <div class="ll">
+              <p class="mm">Kooor</p>
+              <p class="mm2">Плейлист - komekseidibai</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      <div class="qwerty">
+      <div class="block3">
+        
+          <div class="vv">
+            <p class="mj">Все</p>
+            <p class="mj2">Музыка</p>
+          </div>
+          <div class="klk">
+          <div class="redmy note">
+            <img src="asik.jpg" alt="" />
+            <p>Микс дня#2</p>
+          </div>
+          <div class="redmy note">
+            <img src="asik2.jpg" alt="" />
+            <p>Asik:микс</p>
+          </div>
+          <div class="redmy note">
+            <img src="asik3.jpg" alt="" />
+            <p>Любимые треки</p>
+          </div>
+          <div class="redmy note">
+            <img src="kaspi.jpg" alt="" />
+            <p>Каспийский груз</p>
+          </div>
+          <div class="redmy note">
+            <img src="basta.jpg" alt="" />
+            <p>Баста</p>
+          </div>
+          <div class="redmy note">
+            <img src="summer.jpg" alt="" />
+            <p>Summer time</p>
+          </div>
+          </div>
+       
+      </div>
+      
+      <div class="block4">
+        <p class="mnb">По мотивам твоих недавних действий</p>
+        <div class="pp">
+          <p class="tytr">Послушай сегодня</p>
+          <p class="ytr">Показать все</p>
+        </div>
+        <div class="boxs">
+        <div class="box box1">
+          <img src="doma.jpg" alt="" />
+          <p class="name">Дома</p>
+          <p class="avtor">GUF</p>
+        </div>
+        <div class="box box2">
+          <img src="IAM.jpg" alt="" />
+          <p class="name">I AM</p>
+          <p class="avtor">MACAN</p>
+        </div>
+        <div class="box box3">
+          <img src="untouch.jpg" alt="" />
+          <p class="name">Untouchable</p>
+          <p class="avtor">MiyaGi & Эндшпиль</p>
+        </div>
+        <div class="box box4">
+          <img src="MOT.jpg" alt="" />
+          <p class="name">Наизнанку</p>
+          <p class="avtor">МОТ</p>
+        </div>
+        <div class="box box5">
+          <img src="TARAS.jpg" alt="" />
+          <p class="name">В режме полета</p>
+          <p class="avtor">TARAS</p>
+        </div>
+      </div>
+      </div>
+      </div>
+      
+    </div>
+  </body>
+</html>
